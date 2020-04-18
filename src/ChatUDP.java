@@ -43,6 +43,8 @@ public class ChatUDP extends JFrame {
         JButton btnSend = new JButton();
         btnSend.setText("Отправить");
         btnSend.setToolTipText("Отправить сообщение");
+        JRootPane rootPane = frame.getRootPane();
+        rootPane.setDefaultButton(btnSend);
         btnSend.addActionListener(e -> {
             try {
                 btnSendHandler();
